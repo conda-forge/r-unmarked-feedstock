@@ -1,4 +1,4 @@
-{% set version = '1.0.0' %}
+{% set version = "1.0.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/unmarked_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/unmarked/unmarked_{{ version }}.tar.gz
-  sha256: fa09350d5c261eae353bf9ce2b3768afb98f0d44faa9afeed25e1f09b1686ded
+  sha256: a3bb9bdc7a4a79ea38482df3f8cbb6e9082332a0d894eeb4b3dc816344cec0e4
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -57,16 +57,12 @@ test:
     - "\"%R%\" -e \"library('unmarked')\""  # [win]
 
 about:
-  home: http://groups.google.com/group/unmarked, https://sites.google.com/site/unmarkedinfo/home,
-    http://github.com/ianfiske/unmarked, http://github.com/rbchan/unmarked
+  home: http://groups.google.com/group/unmarked, https://sites.google.com/site/unmarkedinfo/home, http://github.com/ianfiske/unmarked, http://github.com/rbchan/unmarked
   license: GPL-3.0-only
-  summary: Fits hierarchical models of animal abundance and occurrence to data collected using
-    survey methods such as point counts, site occupancy sampling, distance sampling,
-    removal sampling, and double observer sampling. Parameters governing the state and
-    observation processes can be modeled as functions of covariates.
+  summary: Fits hierarchical models of animal abundance and occurrence to data collected using survey methods such as point counts, site occupancy sampling, distance sampling, removal sampling, and double observer sampling. Parameters governing the state and observation processes can be modeled as functions of covariates.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
