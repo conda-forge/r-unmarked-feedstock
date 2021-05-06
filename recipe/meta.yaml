@@ -30,14 +30,16 @@ requirements:
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
-    - libblas
     - r-base
     - r-mass
     - r-matrix
     - r-rcpp >=0.8.0
     - r-rcpparmadillo
+    - r-tmb >=1.7.18
     - r-lattice
+    - r-lme4
     - r-plyr
     - r-raster
   run:
@@ -47,7 +49,9 @@ requirements:
     - r-matrix
     - r-rcpp >=0.8.0
     - r-rcpparmadillo
+    - r-tmb >=1.7.18
     - r-lattice
+    - r-lme4
     - r-plyr
     - r-raster
 
