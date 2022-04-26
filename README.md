@@ -3,7 +3,7 @@ About r-unmarked
 
 Home: http://groups.google.com/group/unmarked, https://sites.google.com/site/unmarkedinfo/home, http://github.com/ianfiske/unmarked, http://github.com/rbchan/unmarked
 
-Package license: GPL-3.0-only
+Package license: GPL-3.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-unmarked-feedstock/blob/main/LICENSE.txt)
 
