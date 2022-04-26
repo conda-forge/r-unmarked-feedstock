@@ -38,11 +38,12 @@ requirements:
     - r-matrix
     - r-rcpp >=0.8.0
     - r-rcpparmadillo
+    - r-rcppeigen
     - r-tmb >=1.7.18
     - r-lattice
     - r-lme4
+    - r-pbapply
     - r-plyr
-    - r-raster
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
@@ -50,11 +51,12 @@ requirements:
     - r-matrix
     - r-rcpp >=0.8.0
     - r-rcpparmadillo
+    - r-rcppeigen
     - r-tmb >=1.7.18
     - r-lattice
     - r-lme4
+    - r-pbapply
     - r-plyr
-    - r-raster
 
 test:
   commands:
@@ -63,7 +65,7 @@ test:
 
 about:
   home: http://groups.google.com/group/unmarked, https://sites.google.com/site/unmarkedinfo/home, http://github.com/ianfiske/unmarked, http://github.com/rbchan/unmarked
-  license: GPL-3.0-only
+  license: GPL-3.0-or-later
   summary: Fits hierarchical models of animal abundance and occurrence to data collected using survey methods such as point counts, site occupancy sampling, distance sampling, removal sampling, and double observer sampling. Parameters governing the state and observation processes can be modeled as functions of covariates.
   license_family: GPL3
   license_file:
