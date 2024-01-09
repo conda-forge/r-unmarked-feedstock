@@ -3,6 +3,7 @@ About r-unmarked-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-unmarked-feedstock/blob/main/LICENSE.txt)
 
+
 About r-unmarked
 ----------------
 
@@ -11,6 +12,7 @@ Home: http://groups.google.com/group/unmarked, https://sites.google.com/site/unm
 Package license: GPL-3.0-or-later
 
 Summary: Fits hierarchical models of animal abundance and occurrence to data collected using survey methods such as point counts, site occupancy sampling, distance sampling, removal sampling, and double observer sampling. Parameters governing the state and observation processes can be modeled as functions of covariates.
+
 About r-unmarked
 ----------------
 
@@ -153,7 +155,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
