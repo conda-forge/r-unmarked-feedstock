@@ -1,4 +1,4 @@
-{% set version = "1.5.0" %}
+{% set version = "1.5.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/unmarked_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/unmarked/unmarked_{{ version }}.tar.gz
-  sha256: 1357e811193a4911c7c64fbcacb730740d4d46b7788321188bf558d5a55b594e
+  sha256: 1a26aac5c876d99aa6a0b2d82e03ad6f563ff9333befd56bc8d06b3d18a2a13f
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
